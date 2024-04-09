@@ -35,3 +35,33 @@ document.addEventListener("mouseover", () => {
         document.querySelector(".circle-cursor").style.display = "block";
         document.body.style.cursor = "none"; // Hide default cursor when mouse is over the page
     });
+
+const searchBar = document.getElementById('search-bar');
+        const searchForm = document.getElementById('search-form');
+
+        searchBar.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                const query = searchBar.value.trim();
+                search(query);
+            }
+        });
+
+        function search(query) {
+            // Check if the input looks like a URL
+            const urlRegex = /^(http(s)?:\/\/)?([\w-]+.)+[\w-]+(\/[\w- .\/?%&=]*)?$/;
+            if (urlRegex.test(query)) {
+                // If it's a URL, load it
+                window.location.href = addHttpIfMissing(query);
+            } else {
+                // If it's not a URL, submit the form with the search query
+                searchForm.submit();
+            }
+        }
+
+        function addHttpIfMissing(url) {
+            // Add 'http://' prefix if missing
+            if (!/^https?:\/\//i.test(url)) {
+                return 'http://' + url;
+            }
+            return url;
+        }
