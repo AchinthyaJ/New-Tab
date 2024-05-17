@@ -2,6 +2,10 @@ html{
     cursor: none;
     background-image: url("./bg img .jpg") 
 }
+
+.weather{
+    font-size: 24px;
+}
 h1{
     text-align: 200px left 300px right;
     
