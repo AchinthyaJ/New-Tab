@@ -3,9 +3,11 @@ html{
     background-image: url("./bg img .jpg") 
 }
 
-.weather{
+.temp{
     font-size: 24px;
+    float:right;
 }
+
 h1{
     text-align: 200px left 300px right;
     
