@@ -119,3 +119,16 @@ document.addEventListener("mouseover", () => {
       window.location.href = 'vscode://';
     }
 
+window.addEventListener('load', () => {
+    const content = document.querySelector('.content');
+    const body = document.querySelector('body');
+
+    // Check if the content height is less than the viewport height
+    if (content.scrollHeight <= window.innerHeight) {
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = 'auto';
+    }
+});
+
+
