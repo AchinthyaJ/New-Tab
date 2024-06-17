@@ -61,6 +61,7 @@ html, body {
 
 body {
     cursor: none; /* Hide the default cursor */
+    background:-moz-element(#bg-wrap);
   }
 
 .circle-cursor {
