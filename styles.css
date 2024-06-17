@@ -2,7 +2,9 @@ html{
     cursor: none;
     background-image: url("./bg img .jpg") 
 }
-
+.container{
+    margin-top:-1200px;
+}
 .temp{
     font-size: 24px;
     float:right;
