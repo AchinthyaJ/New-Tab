@@ -1,9 +1,9 @@
 html{
     cursor: none;
-    background-image: url("./bg img .jpg") 
+    background:white;
 }
 .container{
-    margin-top:-1200px;
+    margin-top:-1300px;
 }
 .temp{
     font-size: 24px;
