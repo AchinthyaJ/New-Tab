@@ -120,7 +120,7 @@ document.addEventListener("mouseover", () => {
     }
 
 window.addEventListener('load', () => {
-    const content = document.querySelector('.content');
+    const content = document.querySelector('.container');
     const body = document.querySelector('body');
 
     // Check if the content height is less than the viewport height
